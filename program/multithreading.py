@@ -21,6 +21,12 @@ def main():
         t1 = Down('ABCDEFG')
         t1.start()
         t1.join()
+        t2 = Down('GFEDCBA')
+        t2.start()
+        t2.join()
+        end = time()
+        print('total%.2fs.' % (end- start))
+        
     except:
         print('error')
 
