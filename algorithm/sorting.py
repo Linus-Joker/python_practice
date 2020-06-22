@@ -1,12 +1,13 @@
-#選擇排序法
+# 選擇排序法
 def select_sort():
-    y = [12 ,11, 10]
+    y = [12, 11, 10]
     n = len(y)
     for i in range(len(y)):
         min_idx = y[i]
-        print(min_idx)
+        print(i)
         for j in range(i, n, 1):
-            print(j, y[j])
+            # print(j, y[j])
+            print(j)
             if y[j] < min_idx:
                 # min_idx = y[j]
                 y[i], y[j] = y[j], y[i]
@@ -14,6 +15,8 @@ def select_sort():
         # print('目前是第', i+1, '次選擇排序:', y)
 
 # 找最小值(最大值就反過來)
+
+
 def min():
     y = [49, 57, 99, 23, 66]
     for i in range(len(y)):
@@ -24,6 +27,7 @@ def min():
             if y[j] < min_idx:
                 min_idx = y[j]
     print(min_idx)
+
 
 select_sort()
 # min()
