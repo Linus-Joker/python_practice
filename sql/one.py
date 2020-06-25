@@ -5,9 +5,9 @@ try:
     # 連接 MySQL/MariaDB 資料庫
     connection = mysql.connector.connect(
         host='localhost',          # 主機名稱
-        database='test', # 資料庫名稱
+        database='test',  # 資料庫名稱
         user='root',        # 帳號
-        password='testro0508')  # 密碼
+        password='')  # 密碼
 
     if connection.is_connected():
 
@@ -21,7 +21,7 @@ try:
         record = cursor.fetchone()
         print("目前使用的資料庫：", record)
 
-        #查詢資料庫
+        # 查詢資料庫
         cursor.execute("SELECT * FROM tb;")
         records = cursor.fetchall()
         print("資料筆數：", cursor.rowcount)
