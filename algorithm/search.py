@@ -6,7 +6,9 @@ def search(data):
     num = int(23)
     for i in range(n):
         if num == data[i]:
-            print(num)
+            print("找到的數字:", num)
+        else:
+            print("未找到數字!!")
 
 
 search(y)
