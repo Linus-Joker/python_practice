@@ -16,6 +16,6 @@ def insert_sort(num_list):
 
 
 if __name__ == '__main__':
-    num_list = [9, 4, 11, 2, 7]
+    num_list = [20, 9, 100, 0, 55, 3, 11]
     print('插入排序前：{}'.format(num_list))
     print('插入排序後：{}'.format(insert_sort(num_list)))
