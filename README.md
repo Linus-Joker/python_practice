@@ -1,2 +1,1 @@
-# 100_Day
-python practice
+# python_practice
