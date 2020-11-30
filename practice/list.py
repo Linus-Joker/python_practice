@@ -1,3 +1,3 @@
 parameter = ['a', 'c', 'b', 'e']
-
-print('fff' in parameter)
+parameter.pop(0)
+print(parameter)

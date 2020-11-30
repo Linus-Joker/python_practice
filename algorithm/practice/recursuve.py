@@ -10,15 +10,18 @@ def sum(list):
 
 # print(sum([5, 7, 3, 8, 10]))
 
-# def factorial(n):
-#     if n == 1:
-#         return 1
-#     else:
-#         return n * factorial(n-1)
-#     # 個人結論是5*4*3*2*1，先重複跑factorial函式，將值先代回來，當n=0時結束並return 值回來
+
+def factorial(n):
+    print(n)
+    if n == 1:
+        return 1
+    else:
+        return n * factorial(n-1)
+# 個人結論是5*4*3*2*1，先重複跑factorial函式，將值先代回來，當n=0時結束並return 值回來
 
 
-# print(factorial(5))
+print(factorial(5))
+
 
 def f(n):
 
@@ -32,5 +35,5 @@ def f(n):
 
 
 # 這裡的結果是指index
-for i in range(1, 11):
-    print(i, ":", f(i))
+# for i in range(1, 11):
+#     print(i, ":", f(i))

@@ -1,10 +1,10 @@
 # test
-score = [45, 59, 62, 67, 70, 78, 83, 85, 88, 92]
+score = [45, 59, 62, 67, 70, 78, 83, 85, 88, 92, 96]
 mid = 5
 left = 0
 right = len(score) - 1
 while (score[mid] != 59):
-    print("檢查score[", mid, "]=", score[mid], "是否等於59")
+    print("檢查score[", mid, "]=", score[mid], "是否等於62")
     if left >= right:
         break
     if score[mid] > 59:
@@ -15,10 +15,10 @@ while (score[mid] != 59):
     print("right更新為", right)
     print("left更新為", left)
     print("mid更新為", mid)
-    if score[mid] == 59:
-        print("找到59分")
+    if score[mid] == 62:
+        print("找到62分")
     else:
-        print("找不到59分")
+        print("找不到62分")
 
 
 # data = [1, 2, 3, 4, 5, 6, 7, 8, 9]
