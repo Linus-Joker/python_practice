@@ -1,4 +1,5 @@
-data = [89, 34, 67, 100, 66, 29]
+# data = [89, 34, 67, 100, 56, 29]
+data = [8, 6, 1, 10, 5, 3, 9, 2, 7, 4]
 
 
 def quicksort(data, left, right):  # 輸入資料，和從兩邊開始的位置
@@ -18,7 +19,7 @@ def quicksort(data, left, right):  # 輸入資料，和從兩邊開始的位置
             data[i], data[j] = data[j], data[i]  # if跑完還是會去跑while，直到不滿足條件
         print(i, j)
         print(data)
-        print("key", key)
+        print("key:", key)
         # print(data[left])
 
     # 將基準點歸換至代理人相遇點
