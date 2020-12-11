@@ -5,9 +5,15 @@ class Pet(object, metaclass=ABCMeta):
     def __init__(self, name):
         self.name = name
 
+    def run(self):
+        print('fast')
+
     @abstractmethod
     def voice(self):
         pass
+
+    def eat(self):
+        print('飼料')
 
 
 class Dog(Pet):
@@ -22,6 +28,9 @@ class Cat(Pet):
 
 dd = Dog('yellow')
 dd.voice()
+dd.run()
+dd.eat()
 
 me = Cat('white')
 me.voice()
+me.eat()
