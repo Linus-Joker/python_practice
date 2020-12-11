@@ -5,7 +5,7 @@
 ### algorithm
 * practice
 * search
-1. binary
+  * 123
 * sort
 
 ### array
