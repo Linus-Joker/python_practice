@@ -5,8 +5,12 @@
 ### algorithm
 * practice
 * search
-  * 123
+  * binary
 * sort
+  * bubble
+  * insert
+  * quick
+  * select
 
 ### array
 ### data_structure
