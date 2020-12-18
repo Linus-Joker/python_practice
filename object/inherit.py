@@ -1,23 +1,29 @@
-# 物件的繼承與複寫
+# 交通工具(基底類別)
+class Transportation:
+    # 建構式
+    def __init__(self):
+        self.color = "white"  # 顏色屬性
+    # 駕駛方法
+
+    def drive(self):
+        print("drive method is called.")
+# 汽車子類別
 
 
-class Person():
-    def __init__(self, name):
-        self.name = name
+class Car(Transportation):
+    # 加速方法
+    def accelerate(self):
+        print("accelerate is method called.")
+
+# 飛機子類別
 
 
-class Car():
-    def make(self):
-        print('I am a car!!')
+class Airplane(Transportation):
+    # 飛行方法
+    def fly(self):
+        print("fly method is called.")
 
 
-class Yo(Car):
-    def make(self):
-        print('I am yo car!!')
-
-
-# give_new_car = Car()
-# give_new_yo = Yo()
-# give_new_car.make()
-# give_new_yo.make()
-print(Car.make('car'))
+mazda = Car()
+mazda.drive()
+print(mazda.color)
