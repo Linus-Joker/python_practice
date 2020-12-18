@@ -14,6 +14,12 @@
 
 ### array
 ### data_structure
+* binary
+* linked_list
+* linked
+* stack
+* queue
+
 ### leetcode practice
 ### object
 ### practice 
