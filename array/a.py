@@ -1,17 +1,18 @@
-list = ['abc', 'milk', 'apple']
+# 在 python 應該叫 list
+import unittest
+list = []
 
 
 class Arr():
     # append結尾
     def add(self, list):
-        print(list[0:1])
-        list.append('banana')
-        print(list)
+        # print(list[0:1])
+        list.append('apple')
+        return list
 
     # split
-    def split(self):
-        bir = '1/6/1955'
-        print(bir.split('/'))
+    def split(self, birStr):
+        return birStr.split('/')
 
     # extend結合串列
     def extend(self, list):
@@ -48,7 +49,7 @@ class Arr():
         print(', '.join(list))
 
 
-a = Arr()
+# a = Arr()
 # a.add(list)
 # a.split()
 # a.extend(list)
@@ -57,4 +58,23 @@ a = Arr()
 # a.pop(list)
 # a.index(list)
 # a.check(list)
-a.join(list)
+# a.join(list)
+
+
+class ArrTest(unittest.TestCase):
+    def test_add(self):
+        a = Arr()
+        fruitList = a.add(list)
+        resultList = ['apple']
+        self.assertEqual(resultList, fruitList)
+
+    def test_split(self):
+        a = Arr()
+        bir = '1/6/1955'
+        testList = a.split(bir)
+        resultList = ['1', '6', '1955']
+        self.assertEqual(testList, resultList)
+
+
+if __name__ == '__main__':
+    unittest.main()
