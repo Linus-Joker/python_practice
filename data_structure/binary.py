@@ -40,19 +40,22 @@ def postorder(root):
 
 
 r = Node(50)
-# print("r:", r)
+print("r:", r)
 # print("rleft:", r.left)
 r = insert(r, 30)
-# print("r:", r)
-# print("rleft:", r.left)
+print("r:", r)
+#print("r.left:", r.left.val)
+
 r = insert(r, 20)
+print("r:", r)
 r = insert(r, 40)
 r = insert(r, 70)
 r = insert(r, 60)
 r = insert(r, 80)
-# inorder(r)
+#inorder(r)
 # preorder(r)
-postorder(r)
+#postorder(r)
+
 
 
 class Person(object):
