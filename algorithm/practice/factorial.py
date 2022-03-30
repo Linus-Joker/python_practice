@@ -1,8 +1,12 @@
-def factorial_loop(n):
-    factor = 1
-    for i in range(1, n+1):
-        factor *= i
-    return factor
+def f(n):
+    if (n == 1):
+        re = 1
+    else:
+        re = n*f(n-1)
+    print(n, "階乘等於", re)
+    return re
 
 
-print(factorial_loop(4))
+n = int(input("請輸入N值？"))
+result = f(n)
+print(n, "階乘等於", result)
