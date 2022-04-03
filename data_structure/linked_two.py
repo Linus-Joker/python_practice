@@ -38,6 +38,18 @@ class LinkedList:
                 temporaryList = temporaryList.next
             temporaryList.next = newNode
 
+    # 新增資料到中間，用指定的方式
+    def insert_middle(self, num, data):
+        newNode = Node(data)
+        temporaryList = self.head
+        if temporaryList is None:
+            print("List is empty.")
+        else:
+            while(temporaryList.value is not num):
+                temporaryList = temporaryList.next
+            newNode.next = temporaryList.next
+            temporaryList.next = newNode
+
     # 更新開頭資料
     def update_front(self, data):
         if self.head is None:
@@ -73,18 +85,6 @@ class LinkedList:
             while(temporaryList.next.next is not None):
                 temporaryList = temporaryList.next
             temporaryList.next = None
-
-    # 新增資料到中間，用指定的方式
-    def insert_middle(self, num, data):
-        newNode = Node(data)
-        temporaryList = self.head
-        if temporaryList is None:
-            print("List is empty.")
-        else:
-            while(temporaryList.value is not num):
-                temporaryList = temporaryList.next
-            newNode.next = temporaryList.next
-            temporaryList.next = newNode
 
     # 刪除節點
     def DeleteData(self, data):  # 刪除list中的T data資料

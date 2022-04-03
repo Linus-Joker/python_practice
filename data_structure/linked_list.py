@@ -18,6 +18,7 @@ class LinkedList(object):
             print(node.val, end=end)
             node = node.next
 
+    # 插入到最後1個
     def append(self, value):
         if not self.head:
             # print(value)
@@ -41,6 +42,7 @@ class LinkedList(object):
             node = node.next
         node.next = None
 
+    # 插入到第1個
     def push(self, value):
 
         if not self.head:
