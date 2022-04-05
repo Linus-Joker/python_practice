@@ -6,28 +6,30 @@
 
 - practice
 - search
+  - binary_search
   - binary
+  - hash
 - sort
   - bubble
   - insert
+  - merge
   - quick
-  - select
+  - selection
 
 ### array
 
 ### data_structure
 
-- binary
-- linked_list
-- linked
 - stack
 - queue
+- linked_list
+- linked
+- binary_list
+- binarySearchTree
 
 ### leetcode practice
 
 ### object
-
-- cart 的練習比較糟糕，要再重構
 
 ### practice
 
