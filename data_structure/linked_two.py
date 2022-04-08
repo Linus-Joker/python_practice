@@ -14,7 +14,8 @@ class LinkedList:
         else:
             current = self.head
             while current is not None:
-                print(current.value, end=' ')
+                # print(current.value, end=' ')
+                print(current.value)
                 current = current.next
 
     # 放資料在List的最前面
@@ -117,6 +118,16 @@ class LinkedList:
 
         current.value = data
 
+    # 反轉鏈結串列
+    def invert(self):
+        prev = None  # 第1個要改為最後所以為None
+        while self.head:
+            next = self.head.next #等下要處理的
+            self.head.next = prev # 暫存的
+            prev = self.head # 因為反轉，下1個改為前1個
+            self.head = next # 下一個
+        self.head = prev
+
 
 list = LinkedList()
 
@@ -178,3 +189,7 @@ list.print_list()  # 71 2 10 16 80
 print("更新資料")
 list.update_data(2, 3)
 list.print_list()  # 71 3 10 16 80
+
+print("反轉鏈結串列")
+list.invert()
+list.print_list()  # 80 16 10 3 71
