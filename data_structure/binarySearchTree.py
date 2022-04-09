@@ -35,17 +35,9 @@ def insert(root, value):
     return root
 
 
-r = Node(45)
-data = [40, 50, 30, 60, 70, 32, 44, 55, 28]
-for i in data:
-    insert(r, i)
-
 # 依linked list 特性，搜尋重頭開始
 # BST有3種搜尋方式
-
 # 中序追蹤(左中右)(對稱追蹤)
-
-
 def print_tree(node):
     if node is not None:
         print_tree(node.left)
@@ -53,19 +45,13 @@ def print_tree(node):
         print_tree(node.right)
 
 
-print_tree(r)
-
 # 前序追蹤(中左右)(深度追蹤)
-
-
 def pre_order(node):
     if node is not None:
         print(node.value)
         pre_order(node.left)
         pre_order(node.right)
 
-
-# pre_order(r)
 
 # 後序追蹤(左右中)(廣度追蹤)
 def post_order(node):
@@ -75,4 +61,25 @@ def post_order(node):
         print(node.value)
 
 
-# post_order(r)
+def modify(node):
+    pass
+
+
+def delete(node):
+    pass
+
+
+if __name__ == '__main__':
+    r = Node(45)
+    data = [40, 50, 30, 60, 70, 32, 44, 55, 28]
+    for i in data:
+        insert(r, i)
+
+    # 中序追蹤(左中右)(對稱追蹤)
+    print_tree(r)
+
+    # 前序追蹤(中左右)(深度追蹤)
+    # pre_order(r)
+
+    # 後序追蹤(左右中)(廣度追蹤)
+    # post_order(r)
