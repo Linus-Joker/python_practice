@@ -2,6 +2,7 @@ from abc import ABCMeta, abstractmethod
 
 
 class Pet(object, metaclass=ABCMeta):
+    # py 抽象練習
     def __init__(self, name):
         self.name = name
 
