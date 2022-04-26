@@ -44,7 +44,7 @@ def main():
         t.start()
     for t in threads:
         t.join()
-    print('账户余额为: ￥%d元' % account.balance)
+    print('賬戶餘額為￥%d元' % account.balance)
 
 
 if __name__ == '__main__':
